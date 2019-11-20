@@ -34,17 +34,8 @@
 		transition: all 500ms;
 	}
 
-	a svg {
-		fill: #db2b39;
-		transition: all 500ms;
-	}
-
 	a:hover {
 		color: #ba2531;
-	}
-
-	a:hover svg {
-		fill: #ba2531;
 	}
 
 	p {
@@ -71,16 +62,11 @@
 	ul li {
 		display: inline-block;
 		vertical-align: middle;
-		margin: 4px 4px 0px;
+		margin: 0px;
 	}
 
-	.social-list svg {
-		width: 1.375em;
-		height: 1.375em;
-	}
-
-	.svg-dump {
-		display: none;
+	ul li + li {
+		margin-left: 4px;
 	}
 
 	@media all and (min-width: 600px) {
@@ -152,28 +138,7 @@
 </head>
 <body>
 
-<svg class="svg-dump">
-	<defs>
-		<symbol class="icon icon-envelope-open-o" id="icon-envelope-open-o" viewBox="0 0 1792 1792">
-			<path d="M1474 913l39 51q8 11 6.5 23.5t-11.5 20.5q-43 34-126.5 98.5t-146.5 113-67 51.5q-39 32-60 48t-60.5 41-76.5 36.5-74 11.5h-2q-37 0-74-11.5t-76-36.5-61-41.5-60-47.5q-5-4-65-50.5t-143.5-111-122.5-94.5q-11-8-12.5-20.5t6.5-23.5l37-52q8-11 21.5-13t24.5 7q94 73 306 236 5 4 43.5 35t60.5 46.5 56.5 32.5 58.5 17h2q24 0 58.5-17t56.5-32.5 60.5-46.5 43.5-35q258-198 313-242 11-8 24-6.5t21 12.5zm190 719v-928q-90-83-159-139-91-74-389-304-3-2-43-35t-61-48-56-32.5-59-17.5h-2q-24 0-59 17.5t-56 32.5-61 48-43 35q-215 166-315.5 245.5t-129.5 104-82 74.5q-14 12-21 19v928q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm128-928v928q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-928q0-56 41-94 123-114 350-290.5t233-181.5q36-30 59-47.5t61.5-42 76-36.5 74.5-12h2q37 0 74.5 12t76 36.5 61.5 42 59 47.5q43 36 156 122t226 177 201 173q41 38 41 94z"/>
-		</symbol>
-		<symbol class="icon icon-twitter" id="icon-twitter" viewBox="0 0 1792 1792">
-			<path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/>
-		</symbol>
-		<symbol class="icon icon-instagram" id="icon-instagram" viewBox="0 0 1792 1792">
-			<path d="M1152 896q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm138 0q0 164-115 279t-279 115-279-115-115-279 115-279 279-115 279 115 115 279zm108-410q0 38-27 65t-65 27-65-27-27-65 27-65 65-27 65 27 27 65zm-502-220q-7 0-76.5-.5t-105.5 0-96.5 3-103 10-71.5 18.5q-50 20-88 58t-58 88q-11 29-18.5 71.5t-10 103-3 96.5 0 105.5.5 76.5-.5 76.5 0 105.5 3 96.5 10 103 18.5 71.5q20 50 58 88t88 58q29 11 71.5 18.5t103 10 96.5 3 105.5 0 76.5-.5 76.5.5 105.5 0 96.5-3 103-10 71.5-18.5q50-20 88-58t58-88q11-29 18.5-71.5t10-103 3-96.5 0-105.5-.5-76.5.5-76.5 0-105.5-3-96.5-10-103-18.5-71.5q-20-50-58-88t-88-58q-29-11-71.5-18.5t-103-10-96.5-3-105.5 0-76.5.5zm768 630q0 229-5 317-10 208-124 322t-322 124q-88 5-317 5t-317-5q-208-10-322-124t-124-322q-5-88-5-317t5-317q10-208 124-322t322-124q88-5 317-5t317 5q208 10 322 124t124 322q5 88 5 317z"/>
-		</symbol>
-		<symbol class="icon icon-github" id="icon-github" viewBox="0 0 1792 1792">
-			<path d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z"/>
-		</symbol>
-		<symbol class="icon icon-linkedin" id="icon-linkedin" viewBox="0 0 1792 1792">
-			<path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/>
-		</symbol>
-	</defs>
-</svg>
-
 <main itemscope itemtype="http://schema.org/Person">
-	<img class="avatar" itemprop="image" src="./images/robert_sefer.jpg" width="800" height="800" alt="Robert Sefer">
 	<article>
 		<h2>Who</h2>
 		<p><span itemprop="name">Robert Sefer</span>.</p>
@@ -185,11 +150,8 @@
 		<p>Born in Elmhurst, Illinois in 1988. Graduated from the University of Illinois in 2011.</p>
 		<h2>How (to reach me)</h2>
 		<ul class="social-list">
-			<li><a rel="nofollow" href="mailto:rsefer@gmail.com" title="Email" target="_blank"><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-open-o" /></svg></a></li>
-			<li><a rel="nofollow" href="https://twitter.com/rsefer" title="Twitter"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter" /></svg></a></li>
-			<li><a rel="nofollow" href="https://instagram.com/rsefer" title="Instagram"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram" /></svg></a></li>
-			<li><a rel="nofollow" href="https://github.com/rsefer" title="GitHub"><svg class="icon icon-github"><use xlink:href="#icon-github" /></svg></a></li>
-			<li><a rel="nofollow" href="https://www.linkedin.com/in/robertsefer" title="LinkedIn"><svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin" /></svg></a></li>
+			<li><a rel="nofollow" href="mailto:rsefer@gmail.com" title="Email" target="_blank">Email</a></li>
+			<li><a rel="nofollow" href="https://github.com/rsefer" title="GitHub">GitHub</a></li>
 		</ul>
 	</article>
 </main>
